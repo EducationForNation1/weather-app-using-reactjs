@@ -1,0 +1,164 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background and layout */
+.body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Weather container */
+.weather-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Weather card design */
+.weather-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Card width for larger screens */
+    text-align: center;
+}
+
+/* Title and input field */
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.city-input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Button styling */
+.search-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #45a049;
+}
+
+/* Weather info */
+.weather-info {
+    margin-top: 20px;
+}
+
+/* Weather description and temperature */
+.city-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #444;
+}
+
+.weather-description {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.temperature {
+    font-size: 2rem;
+    color: #333;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Additional weather info */
+.additional-info {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #777;
+}
+
+.additional-info p {
+    margin: 5px 0;
+}
+
+/* Media Queries for responsiveness */
+
+/* For screens smaller than 768px (tablets and smaller screens) */
+@media (max-width: 768px) {
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .city-input, .search-btn {
+        font-size: 0.9rem;
+    }
+
+    .city-name {
+        font-size: 1.3rem;
+    }
+
+    .weather-description {
+        font-size: 1rem;
+    }
+
+    .temperature {
+        font-size: 1.8rem;
+    }
+
+    .additional-info p {
+        font-size: 0.9rem;
+    }
+}
+
+/* For screens smaller than 480px (mobile phones) */
+@media (max-width: 480px) {
+    .weather-card {
+        padding: 15px;
+        max-width: 90%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .city-input, .search-btn {
+        font-size: 0.8rem;
+    }
+
+    .city-name {
+        font-size: 1.2rem;
+    }
+
+    .weather-description {
+        font-size: 0.9rem;
+    }
+
+    .temperature {
+        font-size: 1.6rem;
+    }
+
+    .additional-info p {
+        font-size: 0.8rem;
+    }
+}
